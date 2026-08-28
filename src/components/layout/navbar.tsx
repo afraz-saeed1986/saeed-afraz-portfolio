@@ -1,6 +1,7 @@
 
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
@@ -15,10 +16,10 @@ const navigation = [
     label: "Experience",
     href: "#experience",
   },
- {
-  label: "Expertise",
-  href: "#expertise",
-},
+  {
+    label: "Expertise",
+    href: "#expertise",
+  },
   {
     label: "Contact",
     href: "#contact",
@@ -75,15 +76,28 @@ export function Navbar() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-[var(--border-subtle)] bg-[color:var(--background)]/90 backdrop-blur-md">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-8">
-        {/* Logo */}
-        <Link
-          href="/"
-          onClick={closeMenu}
-          className="relative z-10 font-[family-name:var(--font-space-grotesk)] text-lg font-bold tracking-tight text-[var(--foreground)]"
-          aria-label="Saeed Afraz home"
-        >
-          SA.
-        </Link>
+        {/* Brand */}
+ <Link
+  href="/"
+  onClick={closeMenu}
+  className="relative z-10 flex items-center gap-3.5"
+  aria-label="Saeed Afraz home"
+>
+  <span className="relative h-10 w-10 shrink-0 overflow-hidden rounded-full border border-[var(--border)] bg-[var(--surface)] sm:h-12 sm:w-12">
+    <Image
+      src="/images/afraz.jpg"
+      alt="Saeed Afraz"
+      fill
+      sizes="(max-width: 640px) 40px, 48px"
+      className="object-cover"
+      priority
+    />
+  </span>
+
+  <span className="font-[family-name:var(--font-space-grotesk)] text-lg font-bold tracking-tight text-[var(--foreground)]">
+    SA.
+  </span>
+</Link>
 
         {/* Desktop navigation */}
         <nav aria-label="Primary navigation" className="hidden md:block">
