@@ -23,8 +23,8 @@ const siteConfig = {
   title: "Saeed Afraz — Senior Frontend Engineer",
   description:
     "Senior Frontend Engineer with 12+ years of experience building scalable, high-performance and data-driven products with React, TypeScript, Next.js and Angular.",
-  url: "https://your-domain.com",
-  email: "hello@saeedafraz.dev",
+  url: "https://saeedafraz.vercel.app",
+  email: "afraz.saeed1986@gmail.com",
   jobTitle: "Senior Frontend / Product Engineer",
 } as const;
 
