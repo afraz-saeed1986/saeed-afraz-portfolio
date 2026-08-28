@@ -186,7 +186,7 @@ export function Projects() {
           className="mt-8 flex items-center justify-between"
         >
           <span className="text-xs uppercase tracking-[0.18em] text-[var(--muted-light)]">
-            03 selected projects
+            04 selected projects
           </span>
 
           <span className="font-mono text-xs text-[var(--muted-light)]">
